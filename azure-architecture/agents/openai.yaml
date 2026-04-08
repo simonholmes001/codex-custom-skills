@@ -1,0 +1,4 @@
+interface:
+  display_name: "Azure Architecture"
+  short_description: "Design Azure architectures and landing zones"
+  default_prompt: "Use $azure-architecture to design a secure, scalable Azure architecture and landing zone."

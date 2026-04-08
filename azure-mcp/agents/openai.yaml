@@ -1,0 +1,9 @@
+interface:
+  display_name: "Azure MCP"
+  short_description: "Operate Azure resources and diagnostics via MCP"
+  default_prompt: "Use $azure-mcp to inspect and operate Azure resources via MCP."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "azure"
+      description: "Azure MCP server"

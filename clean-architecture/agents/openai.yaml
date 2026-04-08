@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Architecture"
+  short_description: "Design systems with stable boundaries and clear dependencies."
+  default_prompt: "Use this skill to design, review, or refactor software using clean architecture principles."

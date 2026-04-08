@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test-Driven Development"
+  short_description: "Plan and execute robust TDD cycles across codebases."
+  default_prompt: "Use this skill to implement or refactor software with test-driven development."

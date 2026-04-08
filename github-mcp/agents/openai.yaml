@@ -1,0 +1,9 @@
+interface:
+  display_name: "GitHub MCP"
+  short_description: "Work GitHub issues, PRs, and repos via MCP"
+  default_prompt: "Use $github-mcp to handle GitHub issues and pull requests via MCP."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "github"
+      description: "GitHub MCP server"

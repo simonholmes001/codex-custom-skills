@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Review"
+  short_description: "Security-first pull request review workflow."
+  default_prompt: "Review this pull request. Prioritize defects, security risks, regressions, and missing tests. Report findings by severity with file/line references and concrete fixes."

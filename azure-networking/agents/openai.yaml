@@ -1,0 +1,4 @@
+interface:
+  display_name: "Azure Networking"
+  short_description: "Plan and troubleshoot Azure network topologies"
+  default_prompt: "Use $azure-networking to design and debug an Azure network architecture."
