@@ -1,3 +1,8 @@
+---
+name: gh-project-ops
+description: Use this skill for GitHub Project board manipulation. Includes mandatory authentication and scope preflight steps before running gh project commands.
+---
+
 # gh-project-ops
 
 Use this skill for any GitHub Project board manipulation.
