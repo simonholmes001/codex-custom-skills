@@ -1,0 +1,4 @@
+interface:
+  display_name: "MCP Servers"
+  short_description: "Design and operate MCP server integrations"
+  default_prompt: "Use $mcp-servers to design, implement, and troubleshoot MCP server integrations with strong security and operations controls."

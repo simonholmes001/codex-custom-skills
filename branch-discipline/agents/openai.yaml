@@ -1,0 +1,4 @@
+interface:
+  display_name: "Branch Discipline"
+  short_description: "Enforce synced main, branch-from-main, and dedicated worktree workflow."
+  default_prompt: "Use this skill to enforce strict branch and worktree discipline before and during repository changes."

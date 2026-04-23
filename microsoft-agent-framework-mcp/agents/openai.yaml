@@ -1,0 +1,4 @@
+interface:
+  display_name: "Microsoft Agent Framework MCP"
+  short_description: "Integrate MAF with MCP tools securely"
+  default_prompt: "Use $microsoft-agent-framework-mcp to design, implement, and troubleshoot Microsoft Agent Framework integrations with MCP tool servers and governance controls."

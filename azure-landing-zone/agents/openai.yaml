@@ -1,0 +1,4 @@
+interface:
+  display_name: "Azure Landing Zone"
+  short_description: "Design and implement Azure landing zones"
+  default_prompt: "Use $azure-landing-zone to design, validate, and deploy Azure landing zones aligned to CAF and Azure Landing Zones guidance."

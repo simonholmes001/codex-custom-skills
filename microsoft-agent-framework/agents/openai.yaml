@@ -1,0 +1,4 @@
+interface:
+  display_name: "Microsoft Agent Framework"
+  short_description: "Design and build apps with Microsoft Agent Framework"
+  default_prompt: "Use $microsoft-agent-framework to design, implement, and review agentic systems with Microsoft Agent Framework."
