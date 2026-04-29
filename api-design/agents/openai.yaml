@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Design"
+  short_description: "Design evolvable API contracts and versioning strategy"
+  default_prompt: "Use $api-design to define or review this API contract with compatibility and operability guidance."

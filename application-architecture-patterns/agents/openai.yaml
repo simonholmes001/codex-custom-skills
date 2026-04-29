@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Patterns"
+  short_description: "Choose app architecture patterns with clear tradeoffs"
+  default_prompt: "Use $application-architecture-patterns to evaluate architecture options and recommend a staged migration plan."

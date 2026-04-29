@@ -1,0 +1,4 @@
+interface:
+  display_name: "Non-Functional Requirements"
+  short_description: "Convert quality goals into measurable constraints"
+  default_prompt: "Use $non-functional-requirements to define measurable NFRs and map them to architecture and validation requirements."

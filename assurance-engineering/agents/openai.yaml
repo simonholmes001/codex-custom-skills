@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assurance Engineering"
+  short_description: "Design and review assurance controls for Azure and AI systems"
+  default_prompt: "Apply assurance engineering practices to this architecture, identify control gaps, and produce a prioritized remediation plan with evidence requirements."
