@@ -1,0 +1,4 @@
+interface:
+  display_name: "Twelve Factor App"
+  short_description: "Assess and remediate apps against 12-factor principles"
+  default_prompt: "Use $twelve-factor-app to evaluate this service against the 12-factor app principles and produce a prioritized remediation plan."

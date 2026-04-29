@@ -1,0 +1,4 @@
+interface:
+  display_name: "App Design Principles"
+  short_description: "Improve app design using proven engineering principles"
+  default_prompt: "Use $app-design-principles to review this codebase and produce a prioritized design improvement plan."

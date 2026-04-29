@@ -1,0 +1,4 @@
+interface:
+  display_name: "Domain Modeling"
+  short_description: "Design bounded contexts, aggregates, and invariants"
+  default_prompt: "Use $domain-modeling to produce a domain model with bounded contexts, aggregates, and invariant rules."

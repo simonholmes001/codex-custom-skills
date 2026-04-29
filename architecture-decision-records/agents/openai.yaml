@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Decision Records"
+  short_description: "Document architectural decisions with clear tradeoffs"
+  default_prompt: "Use $architecture-decision-records to draft an ADR with alternatives, rationale, and implementation consequences."
