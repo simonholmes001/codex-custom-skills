@@ -31,9 +31,23 @@ Use workflow orchestration when:
 
 If a deterministic function solves the task, prefer that over introducing an agent.
 
+## Agents Overview Additions
+
+- Agent types are exposed through a common `AIAgent` abstraction, enabling agent-agnostic orchestration layers.
+- Providers can be swapped while preserving the high-level run pattern (`AsAIAgent(...)` + `RunAsync(...)`).
+- Function tools are first-class and should be the default extension point before introducing more complex orchestration.
+- Protocol-backed agents (for example A2A-connected agents) enable remote-agent composition.
+
+## Running Agents Additions
+
+- Running supports zero/one/many input messages and both streaming and non-streaming execution.
+- Responses can include tool calls/results and status content in addition to end-user text; result extraction should aggregate text content intentionally.
+- Per-run model options can override defaults; keep run-level overrides explicit and auditable.
+
 ## Key Operational Themes
 
 - Add OpenTelemetry early for traceability.
 - Define retries/timeouts and stall handling for long-running operations.
 - Use approvals for sensitive actions.
 - Prefer explicit auth boundaries (managed identities, RBAC, scoped credentials).
+- Treat third-party tool/server integrations as explicit risk boundaries with data-flow review.

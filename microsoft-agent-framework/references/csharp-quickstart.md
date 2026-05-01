@@ -24,11 +24,12 @@ dotnet add package Azure.Identity
 dotnet add package Microsoft.Agents.AI.OpenAI --prerelease
 ```
 
-For general framework + Foundry paths, repository docs also show:
+For Foundry/Azure AI Projects-based paths:
 
 ```bash
-dotnet add package Microsoft.Agents.AI
-# or Foundry-specific package variants when needed
+dotnet add package Azure.AI.Projects --prerelease
+dotnet add package Azure.Identity
+dotnet add package Microsoft.Agents.AI.Foundry --prerelease
 ```
 
 ## Minimal Agent Shape
@@ -36,12 +37,23 @@ dotnet add package Microsoft.Agents.AI
 A typical C# flow is:
 1. Instantiate provider client (Azure OpenAI/Foundry/OpenAI).
 2. Convert provider client to `AIAgent`.
-3. Set model name + instructions.
+3. Set model/deployment + instructions (+ optional `name`).
 4. Run prompt with `RunAsync`.
+5. Stream when needed with `RunStreamingAsync`.
+
+## Stepwise Build-Up from Get Started
+
+- Step 1 (`your-first-agent`): baseline single-turn invocation and streaming.
+- Step 2 (`add-tools`): register function tools with `AIFunctionFactory.Create(...)`; tool metadata comes from `[Description]` attributes.
+- Step 3 (`multi-turn`): maintain conversation continuity using sessions.
+- Step 4 (`memory`): inject persistent context with context providers.
+- Step 5 (`workflows`): compose deterministic multi-step execution with workflow executors.
+- Step 6 (`hosting`): expose agents through hosting surfaces (for example ASP.NET Core with A2A adapter).
 
 ## Practical Implementation Notes
 
 - Keep model/deployment names and endpoints in environment variables.
-- Prefer managed credentials/RBAC in production.
+- `DefaultAzureCredential` is convenient for local development; for production, prefer explicit credentials (for example managed identity) and scoped RBAC.
+- Agent Framework does not auto-load `.env`; load it explicitly if needed.
 - Add logging and telemetry at the first runnable milestone.
 - Put hard limits on loop depth and tool retries.
