@@ -1,6 +1,10 @@
 ---
 name: domain-modeling
 description: Model business domains into clear bounded contexts, aggregates, entities, value objects, and invariants. Use when a user asks to define domain boundaries, map business rules, identify aggregates, model commands/events, or fix anemic domain models.
+metadata:
+  category: architecture-design
+  subdomain: application-design
+  owner: custom
 ---
 
 # Domain Modeling
@@ -63,3 +67,13 @@ Return:
 - Read `references/domain-modeling-canvas.md`.
 - Read `references/examples.md` for usage examples.
 - Cross-use with `$clean-architecture` and `$application-architecture-patterns`.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

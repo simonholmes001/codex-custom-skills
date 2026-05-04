@@ -1,6 +1,10 @@
 ---
 name: api-design
 description: Design robust application APIs and contracts with compatibility and operability in mind. Use when a user asks for REST/gRPC/event API design, endpoint/resource modeling, versioning strategy, idempotency, pagination/filtering, error schema, or backward-compatible contract changes.
+metadata:
+  category: architecture-design
+  subdomain: api
+  owner: custom
 ---
 
 # API Design
@@ -65,3 +69,13 @@ Return:
 - Read `references/api-design-checklist.md`.
 - Read `references/examples.md` for usage examples.
 - Cross-use with `$non-functional-requirements` and `$architecture-decision-records`.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

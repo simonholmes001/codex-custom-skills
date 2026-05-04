@@ -1,6 +1,10 @@
 ---
 name: application-architecture-patterns
 description: Select and apply application architecture patterns with explicit tradeoff analysis. Use when a user asks to choose architecture style, compare monolith vs microservices, evaluate layered/hexagonal/CQRS/event-driven options, define boundaries, or plan architecture migration.
+metadata:
+  category: architecture-design
+  subdomain: application-design
+  owner: custom
 ---
 
 # Application Architecture Patterns
@@ -66,3 +70,13 @@ Return:
 - Read `references/pattern-selection-matrix.md`.
 - Read `references/examples.md` for usage examples.
 - Cross-use with `$clean-architecture` and `$non-functional-requirements`.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

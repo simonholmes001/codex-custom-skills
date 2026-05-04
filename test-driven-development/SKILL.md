@@ -1,6 +1,10 @@
 ---
 name: test-driven-development
 description: Comprehensive guidance for test-driven development (TDD) across greenfield work, bug fixes, refactors, and legacy modernization. Use when Codex needs to translate requirements into failing tests, execute strict Red-Green-Refactor loops, choose and combine test levels (unit/integration/contract/e2e), design APIs through tests, control mocking strategy, stabilize flaky tests, or incrementally improve code quality without regressions.
+metadata:
+  category: engineering-practice
+  subdomain: delivery-quality
+  owner: custom
 ---
 
 # Test-Driven Development
@@ -71,3 +75,13 @@ Use this structure when reporting TDD work progress:
 3. `Green`: minimal code change that made it pass.
 4. `Refactor`: cleanup performed while preserving behavior.
 5. `Risk`: unresolved edge cases, tradeoffs, or follow-up tests.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

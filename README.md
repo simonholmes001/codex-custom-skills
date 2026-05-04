@@ -1,35 +1,27 @@
-# Skills Repository
+# Codex Custom Skills
 
-This repository stores custom Codex skills used for local and plugin-assisted workflows.
+This repository version-controls a custom skills catalog for Codex.
 
-## What This Repo Contains
+## Purpose
 
-- Top-level folders: one folder per custom skill (for example `api-design`, `azure-architecture`, `microsoft-agent-framework`).
-- `.system/`: system-level skills and support assets used by Codex runtime behaviors.
-- Each skill typically includes:
-  - `SKILL.md` (instructions and workflow)
-  - `agents/` (agent configuration)
-  - `references/` (supporting guidance)
-  - `scripts/` (utility scripts when needed)
-  - `assets/` (icons/images when needed)
+- Track custom skill definitions in git.
+- Mirror local skill-source updates from `~/.codex/skills`.
+- Keep skill guidance shareable, reviewable, and reproducible.
 
-## Source of Truth
+## Repository Layout
 
-The canonical local source for mirrored skill content is:
+- `CATALOG.md`: high-level skill catalog/index.
+- `<skill-name>/SKILL.md`: primary instructions for each skill.
+- `<skill-name>/references/`: supporting standards, templates, and source-backed guidance.
+- `.system/`: system-level skills and supporting assets/scripts.
 
-- `~/.codex/skills`
+## Sync Workflow
 
-This repo is intended to track that content in git so changes can be reviewed, versioned, and shared.
-
-## Sync Model
-
-Typical update flow:
-
-1. Update skill content under `~/.codex/skills`.
-2. Mirror changes into this repository.
+1. Update skills in `~/.codex/skills`.
+2. Mirror content into this repository.
 3. Commit and push to `main`.
 
-## Notes
+## Scope Notes
 
-- Generated runtime artifacts (for example `__pycache__`) should not be tracked.
-- This repository is content-focused; it does not itself execute skills unless consumed by a Codex environment.
+- Runtime artifacts (for example `__pycache__`) are local noise and should not be tracked.
+- This repository stores skill content; execution happens when consumed by a Codex runtime.

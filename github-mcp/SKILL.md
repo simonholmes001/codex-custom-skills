@@ -1,6 +1,10 @@
 ---
 name: github-mcp
 description: Operate GitHub repositories through an MCP server for issue triage, pull request workflows, repository inspection, and metadata updates. Use when Codex needs to search repositories, read or update issues and PRs, inspect files and commits, manage labels and milestones, or automate GitHub coordination tasks through MCP instead of direct git or manual UI steps.
+metadata:
+  category: github
+  subdomain: github-operations
+  owner: custom
 ---
 
 # GitHub MCP
@@ -54,3 +58,13 @@ For each request:
 1. State planned MCP operations before execution when writes are involved.
 2. Report artifacts with repo, object ID, and resulting state.
 3. Include unresolved assumptions and next suggested action.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

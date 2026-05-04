@@ -1,6 +1,10 @@
 ---
 name: azure-networking
 description: Design, review, and troubleshoot Microsoft Azure networking architectures and connectivity. Use when Codex needs to plan or diagnose virtual networks, subnets, NSGs, route tables, VNet peering, VPN Gateway, ExpressRoute, Private Endpoints, Azure Firewall, NAT Gateway, DNS/Private DNS, network segmentation, or hub-and-spoke landing zone connectivity.
+metadata:
+  category: azure
+  subdomain: networking
+  owner: custom
 ---
 
 # Azure Networking
@@ -88,3 +92,13 @@ When responding with this skill:
 3. Provide ordered commands or portal actions.
 4. Provide validation and rollback steps.
 5. Call out unresolved assumptions explicitly.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

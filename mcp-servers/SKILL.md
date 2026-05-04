@@ -1,6 +1,10 @@
 ---
 name: mcp-servers
 description: Design, implement, and troubleshoot Model Context Protocol (MCP) server integrations across local and remote runtimes. Use when Codex needs to choose MCP server/client topology, configure transport and authentication, connect tools safely, evaluate server catalogs, or apply governance and operational controls for production MCP usage.
+metadata:
+  category: agents-mcp
+  subdomain: mcp-integration
+  owner: custom
 ---
 
 # MCP Servers
@@ -54,3 +58,13 @@ When useful, structure output as:
 - `MCP Topology Decision` (context, options, selected model)
 - `Control Matrix` (risk -> control -> telemetry)
 - `Runbook` (symptom -> diagnosis -> remediation)
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

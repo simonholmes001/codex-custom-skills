@@ -1,6 +1,10 @@
 ---
 name: non-functional-requirements
 description: Translate non-functional requirements into concrete architecture and implementation constraints. Use when a user asks to define SLIs/SLOs, reliability/performance/security targets, observability requirements, resilience expectations, or validation plans for quality attributes.
+metadata:
+  category: architecture-design
+  subdomain: application-design
+  owner: custom
 ---
 
 # Non Functional Requirements
@@ -59,3 +63,13 @@ Return:
 - Read `references/nfr-catalog.md`.
 - Read `references/examples.md` for usage examples.
 - Cross-use with `$azure-architecture`, `$application-architecture-patterns`, and `$twelve-factor-app`.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

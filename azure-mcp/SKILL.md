@@ -1,6 +1,10 @@
 ---
 name: azure-mcp
 description: Operate Microsoft Azure through an MCP server for resource discovery, diagnostics, and controlled configuration changes. Use when Codex needs to inspect subscriptions and resource groups, review service configuration, troubleshoot platform issues, validate policy posture, or execute scoped Azure operations through MCP tools.
+metadata:
+  category: azure
+  subdomain: operations
+  owner: custom
 ---
 
 # Azure MCP
@@ -54,3 +58,13 @@ For each request:
 2. Present findings or change result with resource identifiers.
 3. Provide validation checks and rollback guidance.
 4. List unresolved assumptions and next action.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

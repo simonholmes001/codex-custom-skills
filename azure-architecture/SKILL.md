@@ -1,6 +1,10 @@
 ---
 name: azure-architecture
 description: Design Azure cloud architectures and enterprise landing zones using Microsoft best practices. Use when Codex needs to plan or review Azure platform foundations, subscription hierarchy, management groups, identity and access, governance, networking, security controls, workload placement, resilience, cost optimization, or environment rollout patterns.
+metadata:
+  category: azure
+  subdomain: platform-architecture
+  owner: custom
 ---
 
 # Azure Architecture
@@ -74,3 +78,13 @@ When useful, structure output as:
 - `Architecture Decision Record` bullets for major choices
 - `Landing Zone Backlog` with prioritized work items
 - `Control Matrix` mapping risks to Azure controls
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

@@ -1,6 +1,10 @@
 ---
 name: branch-discipline
 description: "Enforce strict git hygiene before any code change in repository work: sync local main to origin/main, create a new branch from synced main, create and use a dedicated worktree for that branch, and avoid editing from the primary repository checkout. Use whenever implementing a feature/fix, opening a PR, or addressing review comments."
+metadata:
+  category: engineering-practice
+  subdomain: delivery-quality
+  owner: custom
 ---
 
 # Branch Discipline
@@ -47,3 +51,13 @@ Before final response, verify and report:
 1. Work was done from the declared worktree path
 2. Branch is not `main`
 3. Local `main` remains aligned to `origin/main` (or state why not)
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

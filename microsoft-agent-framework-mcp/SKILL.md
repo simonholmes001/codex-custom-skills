@@ -1,6 +1,10 @@
 ---
 name: microsoft-agent-framework-mcp
 description: Integrate Microsoft Agent Framework agents with MCP tool servers safely and reliably. Use when Codex needs to design MCP-enabled agent architectures, configure tool registration and routing, enforce governance controls (allowlists, approvals, least privilege), troubleshoot tool-call failures, or define observability/audit patterns for agent-to-tool execution.
+metadata:
+  category: agents-mcp
+  subdomain: agent-framework-mcp
+  owner: custom
 ---
 
 # Microsoft Agent Framework MCP
@@ -53,3 +57,13 @@ When useful, structure output as:
 - `MCP Integration Decision` (context, options, selected pattern)
 - `Control Matrix` (risk -> control -> telemetry)
 - `Runbook` (failure symptom -> check -> remediation)
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

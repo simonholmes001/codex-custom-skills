@@ -1,6 +1,10 @@
 ---
 name: architecture-decision-records
 description: Create and maintain architecture decision records (ADRs) with clear context, alternatives, rationale, and consequences. Use when a user asks to document major technical decisions, compare options formally, capture decision rationale, or update/supersede prior architecture decisions.
+metadata:
+  category: architecture-design
+  subdomain: decision-records
+  owner: custom
 ---
 
 # Architecture Decision Records
@@ -63,3 +67,13 @@ Return:
 - Read `references/adr-template.md`.
 - Read `references/examples.md` for usage examples.
 - Cross-use with `$application-architecture-patterns`, `$api-design`, and `$non-functional-requirements`.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

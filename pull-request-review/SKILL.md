@@ -1,6 +1,10 @@
 ---
 name: pull-request-review
 description: Perform rigorous pull request reviews with a security-first, risk-based approach. Use when reviewing code changes, architecture changes, infrastructure/IaC updates, tests, migrations, CI/CD workflows, or release-impacting behavior. Prioritize actionable findings with severity, concrete evidence, and clear remediation.
+metadata:
+  category: engineering-practice
+  subdomain: delivery-quality
+  owner: custom
 ---
 
 # Pull Request Review
@@ -74,3 +78,13 @@ Raise severity when any of the following are true:
 - `references/severity-model.md`: Severity definitions and merge guidance.
 - `references/checklist.md`: Domain checklist for deep and consistent reviews.
 - `references/comment-templates.md`: Reusable finding and summary templates.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

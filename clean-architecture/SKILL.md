@@ -1,6 +1,10 @@
 ---
 name: clean-architecture
 description: Comprehensive clean architecture guidance for designing, reviewing, and refactoring software systems around stable boundaries and the dependency rule. Use when Codex needs to model entities and use cases, define ports and adapters, separate policy from implementation details, structure modules and services, design contracts and data mapping, test by architectural layer, or migrate legacy systems toward maintainable architecture without breaking behavior.
+metadata:
+  category: architecture-design
+  subdomain: application-design
+  owner: custom
 ---
 
 # Clean Architecture
@@ -67,3 +71,13 @@ Use this structure when reporting architecture work:
 3. `Implementation`: structural changes applied.
 4. `Verification`: tests, architecture checks, and runtime validation.
 5. `Risk`: residual coupling, migration concerns, and next steps.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

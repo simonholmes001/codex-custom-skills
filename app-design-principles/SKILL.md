@@ -1,6 +1,10 @@
 ---
 name: app-design-principles
 description: Apply core software design principles to application code and architecture decisions. Use when a user asks for design review, refactoring guidance, modularity/cohesion/coupling improvements, SOLID/DRY/KISS/YAGNI application, or maintainability-driven restructuring of application code.
+metadata:
+  category: architecture-design
+  subdomain: application-design
+  owner: custom
 ---
 
 # App Design Principles
@@ -73,3 +77,13 @@ Return:
 - Read `references/design-principles-checklist.md` for review criteria.
 - Read `references/examples.md` for usage examples.
 - Cross-use with `$clean-code`, `$clean-architecture`, and `$test-driven-development` when needed.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

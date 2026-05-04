@@ -1,6 +1,10 @@
 ---
 name: gh-project-ops
 description: Use this skill for GitHub Project board manipulation. Includes mandatory authentication and scope preflight steps before running gh project commands.
+metadata:
+  category: github
+  subdomain: github-operations
+  owner: custom
 ---
 
 # gh-project-ops
@@ -32,3 +36,13 @@ Do not guess alternate auth commands.
 Preferred commands are exactly:
 - `gh auth login -h github.com`
 - `gh auth refresh -h github.com -s read:project -s project`
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

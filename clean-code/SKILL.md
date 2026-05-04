@@ -1,6 +1,10 @@
 ---
 name: clean-code
 description: Comprehensive clean code guidance for writing, reviewing, and refactoring maintainable software across languages and codebases. Use when Codex needs to improve readability, naming, function/class design, module boundaries, error handling, state management, testing quality, API ergonomics, code review rigor, technical debt control, and long-term maintainability without changing intended behavior.
+metadata:
+  category: architecture-design
+  subdomain: application-design
+  owner: custom
 ---
 
 # Clean Code
@@ -67,3 +71,13 @@ Use this structure when reporting clean-code work:
 3. `Safety`: tests and checks run to confirm behavior preservation.
 4. `Tradeoffs`: acceptable compromises or deferred follow-ups.
 5. `Next`: optional targeted improvements.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses

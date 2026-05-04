@@ -1,6 +1,10 @@
 ---
 name: twelve-factor-app
 description: Assess, design, and remediate applications against the Twelve-Factor App principles for cloud-native delivery. Use when Codex needs to review a service's operational readiness, propose architecture or code changes for stateless/process-based execution, improve config and secret handling, standardize logs and release/run separation, or produce a concrete 12-factor gap analysis with prioritized fixes.
+metadata:
+  category: architecture-design
+  subdomain: cloud-native
+  owner: custom
 ---
 
 # Twelve Factor App
@@ -77,3 +81,13 @@ Return results in this order:
 ## References
 
 - Read `references/twelve-factor-checklist.md` when performing assessments.
+
+## Cross-Skill Standards
+
+Read and apply `references/cross-skill-standards.md` for:
+
+- Evidence quality rubric (`Verified`, `Derived`, `Assumption`)
+- Context-budget/loading policy
+- Anti-pattern and handoff rules
+- Source freshness policy
+- Minimum output additions for non-trivial responses
