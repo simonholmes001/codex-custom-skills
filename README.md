@@ -5,7 +5,7 @@
 [![Open PRs](https://img.shields.io/github/issues-pr/simonholmes001/codex-custom-skills)](https://github.com/simonholmes001/codex-custom-skills/pulls)
 [![Codex Skills](https://img.shields.io/badge/Codex-Skills%20Catalog-0A66C2)](https://github.com/simonholmes001/codex-custom-skills)
 
-This repository version-controls a custom skills catalog for Codex and provides a reusable source of skill definitions.
+This repository provides a reusable catalog of custom Codex skills.
 
 ## Quick Start
 
@@ -40,26 +40,20 @@ This repository version-controls a custom skills catalog for Codex and provides 
 
 ## Contributing and Authoring
 
-When adding or updating a skill:
+Contributions are welcome. If you want to add a new skill or improve an existing one:
 
-1. Keep the core instruction set in `SKILL.md`.
-2. Add source-backed material to `references/` when claims need grounding.
-3. Keep scripts idempotent and scoped to the skill where possible.
-4. Update `CATALOG.md` when adding new skills or changing purpose.
-5. Verify changes in a local Codex run before opening a PR.
-
-## Sync Workflow
-
-Current operating model:
-
-1. Update skills in local source directory `~/.codex/skills`.
-2. Mirror content into this repository.
-3. Commit and push to `main`.
-
-Mirror exclusions:
-
-- `.git/`
-- `__pycache__/`
+1. Fork this repository (or create a branch if you already have write access).
+2. Make your changes in the relevant skill folder.
+3. Keep the main instructions in `SKILL.md`.
+4. Add or update `references/` content for non-obvious or source-backed guidance.
+5. Keep helper scripts scoped and repeatable.
+6. Update `CATALOG.md` if you add, remove, or repurpose a skill.
+7. Validate your change in a local Codex run.
+8. Open a pull request that includes:
+- what changed
+- why it changed
+- how you validated it
+- any behavior changes or migration notes users should know
 
 ## Compatibility and Scope
 
