@@ -79,6 +79,37 @@ When useful, structure output as:
 - `Landing Zone Backlog` with prioritized work items
 - `Control Matrix` mapping risks to Azure controls
 
+## Quick vs Deep Mode Policy
+
+Use this decision policy to balance depth, cost, and response speed:
+
+### Quick Mode (default)
+
+Use when the request is narrow, exploratory, or low-risk.
+
+1. Read `SKILL.md` and `references/cross-skill-standards.md`.
+2. Read only the minimum task-relevant references for the scoped request.
+3. In the response, state:
+- references read
+- references intentionally not read
+- confidence level (`Verified`, `Derived`, `Assumption`)
+
+### Deep Mode (mandatory full source pass)
+
+Switch to Deep Mode when any of the following is true:
+
+1. The request drives production, go-live, or high-blast-radius decisions.
+2. The request has security, compliance, legal, or financial risk implications.
+3. The request asks for comprehensive, authoritative, or sign-off-quality guidance.
+4. The request includes major architecture or migration commitments.
+5. Quick Mode leaves material uncertainty, conflicting evidence, or low confidence.
+
+In Deep Mode, execute the skill's fullest available source pass workflow for its domain before final recommendations.
+
+### Escalation Rule
+
+Start in Quick Mode unless high-stakes triggers are already explicit. Escalate to Deep Mode immediately when uncertainty remains material.
+
 ## Cross-Skill Standards
 
 Read and apply `references/cross-skill-standards.md` for:
